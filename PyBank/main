@@ -40,14 +40,14 @@ with open(budget_csv) as csv_file:
       # Calculate the average change in profits from month over month
       initial_profit = int(row[1])
 
-    #Error these two values are the same (initial returns 671099 and overall_profit returns 671099) - final returns is the last value in changes
+    #Verified my values. These two values are the same (initial returns 671099 and overall_profit returns 671099) - final returns is the last value in changes
       # This will built out the monthly changes for min and max
       overall_monthly_change = initial_profit - overall_profit
 
       # Apply Append method
       monthly_changes.append(overall_monthly_change)
 
-    #Error total_change_profits returns the last value of the month
+    #Verified my output. total_change_profits returns the last value of the month
       total_change_profits = total_change_profits + overall_monthly_change
       overall_profit = initial_profit
 
